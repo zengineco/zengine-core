@@ -1,0 +1,29 @@
+:root {
+  --zengine-primary: #00d4ff;      /* Neon cyan accent */
+  --zengine-secondary: #ffd700;    /* Gold for wins/jackpots */
+  --zengine-bg: #0a1421;           /* Deep navy circuit bg */
+  --zengine-surface: #121e30;
+  --zengine-text: #e0f7ff;
+  --zengine-border: #1e3a5f;
+  --zengine-glow: 0 0 15px rgba(0, 212, 255, 0.6);
+}
+
+body {
+  background: var(--zengine-bg);
+  color: var(--zengine-text);
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.zengine-logo {
+  height: 48px;
+  filter: drop-shadow(var(--zengine-glow));
+}
+
+/* Glassmorphic cards, neon borders, etc. */
+.card {
+  background: rgba(18, 30, 48, 0.7);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--zengine-border);
+  border-radius: 12px;
+  box-shadow: var(--zengine-glow);
+}
